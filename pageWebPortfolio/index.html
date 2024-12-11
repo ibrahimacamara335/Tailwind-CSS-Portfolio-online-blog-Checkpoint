@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mon Portfolio </title>
+</head>
+<body>
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">CAMARA Ibrahima</h1>
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="#home" class="hover:text-blue-300">Accueil</a></li>
+              <li><a href="#projects" class="hover:text-blue-300">Projets</a></li>
+              <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="relative bg-cover bg-center h-screen" style="background-image: url('https://immigrantquebec.com/fr/wp-content/uploads/2022/01/fa119279-55d4-4cfe-b6e2-8ac15591dc84.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center text-white pt-32">
+          <h2 class="text-4xl font-bold mb-4">Bienvenue sur mon Portfolio</h2>
+          <p class="text-xl">Développeur web passionné par le design et la technologie.</p>
+        </div>
+      </section>
+
+      <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Mes Compétences</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold">HTML</h3>
+              <p>Création de structures de pages web robustes.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold">CSS</h3>
+              <p>Stylisation avec Flexbox, Grid, et Tailwind CSS.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold">JavaScript</h3>
+              <p>Développement d'interactions dynamiques sur la page.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h3 class="text-xl font-semibold">Vue.js</h3>
+              <p>Création d'applications web réactives avec Vue.js.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Mes Projets</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img src="https://media.licdn.com/dms/image/v2/D4D12AQE8ESwOfPt4Lw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1682856034664?e=2147483647&v=beta&t=ctKHojIPIYLleIACf6VXDqZ2xwLXYhHIM4JozvAgoVY" alt="Projet 1" class="w-full h-48 object-cover mb-4 rounded-lg">
+              <h3 class="text-xl font-semibold">Projet 1</h3>
+              <p>Une application web de gestion de tâches avec Vue.js et Tailwind CSS.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img src="https://images.ctfassets.net/aq13lwl6616q/6mBBbyUezOhKYSM7anFNlU/010d92ee217bb2cfeec7c1cdb30c6170/Course_Thumbnail_-_CSS_Bootcamp__5_.jpg" alt="Projet 2" class="w-full h-48 object-cover mb-4 rounded-lg">
+              <h3 class="text-xl font-semibold">Projet 2</h3>
+              <p>Site de portfolio interactif avec animation CSS et JavaScript.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img src="https://daveceddia.com/images/nzTwIqBkpn4.png" alt="Projet 3" class="w-full h-48 object-cover mb-4 rounded-lg">
+              <h3 class="text-xl font-semibold">Projet 3</h3>
+              <p>Application de suivi de dépenses avec React.js et Tailwind CSS.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Contactez-moi</h2>
+          <form action="#" method="POST" class="max-w-lg mx-auto">
+            <div class="mb-4">
+              <label for="name" class="block text-lg">Nom</label>
+              <input type="text" id="name" name="name" class="w-full p-3 mt-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-lg">Email</label>
+              <input type="email" id="email" name="email" class="w-full p-3 mt-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-lg">Message</label>
+              <textarea id="message" name="message" class="w-full p-3 mt-2 border rounded-lg" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg">Envoyer</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <p>&copy; 2024 CAMARA Ibrahima. Tous droits réservés.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-blue-300">Facebook</a>
+            <a href="#" class="hover:text-blue-300">Twitter</a>
+            <a href="#" class="hover:text-blue-300">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+      
+      
+      
+      
+      
+      
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Mon Blog</h1>
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="#home" class="hover:text-gray-400">Accueil</a></li>
+              <li><a href="#categories" class="hover:text-gray-400">Catégories</a></li>
+              <li><a href="#recent" class="hover:text-gray-400">Articles récents</a></li>
+              <li><a href="#subscribe" class="hover:text-gray-400">S'abonner</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Articles Vedettes</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+              <img src="https://aoc.media/wp-content/uploads/2023/04/CC-1.png" alt="Article 1" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Un tournant décisif pour l'avenir du pays</h3>
+                <p class="text-gray-700 mb-4">Les réformes économiques proposées par le gouvernement marquent un moment crucial dans l'histoire de notre nation. Avec des mesures visant à stimuler l'innovation et réduire les inégalités, ce plan pourrait transformer le paysage économique...</p>
+                <a href="#" class="text-blue-600 hover:underline">Lire la suite</a>
+              </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+              <img src="https://aoc.media/wp-content/uploads/2022/07/ivg-inegalite%CC%81s-300x157.png" alt="Article 2" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Agir ou subir ?</h3>
+                <p class="text-gray-700 mb-4">Le changement climatique est désormais un défi incontournable pour nos sociétés modernes. De plus en plus de voix s'élèvent pour exiger des actions concrètes afin de préserver notre environnement...</p>
+                <a href="#" class="text-blue-600 hover:underline">Lire la suite</a>
+              </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+              <img src="https://aoc.media/wp-content/uploads/2022/07/ivg-algo-300x157.png" alt="Article 3" class="w-full h-48 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-4">Un levier essentiel pour la compétitivité des entreprises</h3>
+                <p class="text-gray-700 mb-4">La transformation numérique est devenue un impératif pour les entreprises souhaitant rester compétitives dans un monde de plus en plus connecté...</p>
+                <a href="#" class="text-blue-600 hover:underline">Lire la suite</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Catégories</h2>
+          <div class="flex justify-center space-x-4">
+            <span class="bg-blue-600 text-white py-2 px-4 rounded-full">Tech</span>
+            <span class="bg-green-600 text-white py-2 px-4 rounded-full">Lifestyle</span>
+            <span class="bg-yellow-600 text-white py-2 px-4 rounded-full">Santé</span>
+            <span class="bg-red-600 text-white py-2 px-4 rounded-full">Éducation</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="recent" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Articles Récents</h2>
+          <ul>
+            <li class="text-lg mb-4">
+              <a href="#" class="text-blue-600 hover:underline">Titre de l'Article 1</a> - <span class="text-gray-600">Publié le 1er Janvier 2024</span>
+            </li>
+            <li class="text-lg mb-4">
+              <a href="#" class="text-blue-600 hover:underline">Titre de l'Article 2</a> - <span class="text-gray-600">Publié le 2 Janvier 2024</span>
+            </li>
+            <li class="text-lg mb-4">
+              <a href="#" class="text-blue-600 hover:underline">Titre de l'Article 3</a> - <span class="text-gray-600">Publié le 3 Janvier 2024</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="subscribe" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Abonnez-vous à notre Newsletter</h2>
+          <form action="#" method="POST" class="flex justify-center space-x-4">
+            <input type="email" name="email" placeholder="Votre email" class="p-3 w-64 rounded-lg text-black">
+            <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-500">S'abonner</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-400">Facebook</a>
+            <a href="#" class="hover:text-gray-400">Twitter</a>
+            <a href="#" class="hover:text-gray-400">Instagram</a>
+          </div>
+        </div>
+      </footer>
+      
+      
+      
+      
+      
+      
+    
+</body>
+</html>
